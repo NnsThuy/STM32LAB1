@@ -12,4 +12,5 @@
 void init_Ex4();
 void Ex4_run();
 void display7SEG(int num);
+void display7SEG1(int num1);
 #endif /* INC_EX4_H_ */

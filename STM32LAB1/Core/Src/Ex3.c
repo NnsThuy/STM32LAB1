@@ -6,6 +6,8 @@
  */
 
 #include "Ex3.h"
+#include "Ex4.h"
+
 int counter_A=0, counter_B=0;
 int status_A=0, status_B=0;
 
@@ -33,6 +35,7 @@ void Ex3_run(){
 			  HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin, SET);
 			  HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin, RESET);
 			  counter_A++;
+			  display7SEG1(6-counter_A);
 			  if(counter_A>=5){
 				  status_A=1;
 				  counter_A=0;
@@ -45,7 +48,8 @@ void Ex3_run(){
 			  HAL_GPIO_WritePin(LED_7_GPIO_Port, LED_7_Pin, SET);
 			  HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin, RESET);
 			  HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin, RESET);
-		 		  counter_A++;
+			  counter_A++;
+			  display7SEG1(4-counter_A);
 		 		  if(counter_A>=3){
 		 			  status_A=2;
 		 			  counter_A=0;
@@ -59,6 +63,7 @@ void Ex3_run(){
 			  HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin,RESET);
 			  HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin, SET);
 		 		  counter_A++;
+		 		 display7SEG1(3-counter_A);
 		 		  if(counter_A>=2){
 		 			  status_A=0;
 		 			  counter_A=0;
@@ -76,6 +81,7 @@ void Ex3_run(){
 			  HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin, SET);
 			  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, RESET);
 			  	  counter_B++;
+			  	display7SEG(4-counter_B);
 			  	  if(counter_B>=3){
 			  	       status_B=1;
 			  	       counter_B=0;
@@ -89,6 +95,7 @@ void Ex3_run(){
 			  HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin, RESET);
 			  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, SET);
 			  counter_B++;
+			  display7SEG(3-counter_B);
 			  if(counter_B>=2){
 				  status_B=2;
 				  counter_B=0;
@@ -102,6 +109,7 @@ void Ex3_run(){
 			  HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin, RESET);
 			  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, RESET);
 			  counter_B++;
+			  display7SEG(6-counter_B);
 			  if(counter_B>=5){
 				  status_B=0;
 				  counter_B=0;

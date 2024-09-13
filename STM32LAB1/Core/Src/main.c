@@ -22,7 +22,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Ex1.h"
+#include "Ex2.h"
+#include "Ex3.h"
+#include "Ex4.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,7 +97,6 @@ int main(void)
   while (1)
   {
 	  Ex3_run();
-	  Ex5_run();
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
