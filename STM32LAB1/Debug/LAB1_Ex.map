@@ -1981,12 +1981,11 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .text.Ex678910_run
                 0x0000000008000368       0x9c ./Core/Src/Ex678910.o
                 0x0000000008000368                Ex678910_run
- .text.main     0x0000000008000404       0x20 ./Core/Src/main.o
+ .text.main     0x0000000008000404       0x22 ./Core/Src/main.o
                 0x0000000008000404                main
  .text.SystemClock_Config
-                0x0000000008000424       0x76 ./Core/Src/main.o
-                0x0000000008000424                SystemClock_Config
- *fill*         0x000000000800049a        0x2 
+                0x0000000008000426       0x76 ./Core/Src/main.o
+                0x0000000008000426                SystemClock_Config
  .text.MX_GPIO_Init
                 0x000000000800049c       0x68 ./Core/Src/main.o
  .text.Error_Handler
