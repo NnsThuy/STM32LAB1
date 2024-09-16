@@ -134,7 +134,7 @@ void Ex678910_run(){
     	hour++;
     }
 
-    if (hour>=10){
+    if (hour>=12){
     	hour=0;
     }
     clearAllClock();
